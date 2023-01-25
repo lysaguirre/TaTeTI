@@ -30,7 +30,7 @@ const App = () => {
   };
 
   const checkWinner = (newSquares) => {
-    for (let i = 0; i > winnerPositions.length; i++) {
+    for (let i = 0; i < winnerPositions.length; i++) {
       const [a, b, c] = winnerPositions[i];
       if (
         newSquares[a] &&
@@ -66,18 +66,19 @@ const App = () => {
       });
     }
     setWinnerSquares(winnerPositions);
-    setTimeout(reset, 3000);
+    setTimeout(reset, 800);
   };
 
   return (
     <div className="container">
+      <h1 className="title"> 3 en linea</h1>
+      <ScoreBoard scoreO={score.O} scoreX={score.X} />
       <Board
         winnerSquares={winnerSquares}
         turn={turn}
         squares={squares}
         onClick={handleClick}
       />
-      <ScoreBoard scoreO={score.O} scoreX={score.X} />
     </div>
   );
 };

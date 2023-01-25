@@ -4,17 +4,19 @@
   display: grid;
   grid-auto-flow: column;
   margin-top: 5px;
+  align-items: center;
 }
 
 .score-board div {
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 2em;
+  font-size: 20px;
   padding: 5px;
   font-weight: bold;
-  background-color: blue;
+  background-color: white;
 }
 
 .score-board div:first-child {
-  background-color: red;
+  background-color: black;
+  color: white;
 }

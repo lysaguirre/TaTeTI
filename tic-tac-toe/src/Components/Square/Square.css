@@ -9,7 +9,7 @@
 }
 
 .square--X {
-  background-color: red;
+  background-color: black;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -27,20 +27,20 @@
 }
 
 .square--O {
-  background-color: blue;
+  background-color: white;
   clip-path: circle(50% at 50% 50%);
   border-radius: 50%;
 }
 
 .square--X .winner {
-  animation: x-winner-animation infinite 0.5seg ease-in-out;
+  animation: X-winner-animation infinite 0.5seg ease-in-out;
 }
 
 .square--O .winner {
   animation: O-winner-animation infinite 0.5seg ease-in-out;
 }
 
-@keyframes x-winner-animation {
+@keyframes X-winner-animation {
   from {
     transform: rotate(0deg);
   }

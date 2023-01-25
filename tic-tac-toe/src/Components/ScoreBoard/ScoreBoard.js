@@ -1,10 +1,10 @@
 import "./ScoreBoard.css";
 
-const ScoreBoard = ({ scoreX, scoreO }) => {
+const ScoreBoard = ({ scoreX, scoreO }) => (
   <div className="score-board">
     <div>{scoreX}</div>
     <div>{scoreO}</div>
-  </div>;
-};
+  </div>
+);
 
 export default ScoreBoard;
